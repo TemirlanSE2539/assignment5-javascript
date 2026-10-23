@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Profile</h1>
+
+    <h2>Create Profile</h2>
+
+    <input id="name" placeholder="Name">
+    <input id="year" type="number" placeholder="Birth Year">
+    <button onclick="createProfile()">Create Profile</button>
+
+    <p id="info"></p>
+
+    <h2>My Hobbies</h2>
+
+    <input id="hobby" placeholder="Hobby">
+    <button onclick="addHobby()">Add Item</button>
+    <button onclick="removeHobby()">Remove Item</button>
+
+    <ul id="list"></ul>
+
+    <script>
+        let userProfile = {
+            name: "",
+            birthYear: 2000,
+            isDeveloper: false,
+            hobbies: []
+        };
+
+        function createProfile() {
+            userProfile.name = document.getElementById("name").value;
+            userProfile.birthYear = document.getElementById("year").value;
+
+            let age = 2026 - userProfile.birthYear;
+
+            document.getElementById("info").innerHTML =
+                "Name: " + userProfile.name +
+                "<br>Age: " + age;
+
+            console.log(userProfile);
+        }
+
+        function addHobby() {
+            let hobby = document.getElementById("hobby").value;
+
+            userProfile.hobbies.push(hobby);
+
+            let li = document.createElement("li");
+            li.innerHTML = hobby;
+
+            document.getElementById("list").appendChild(li);
+        }
+
+        function removeHobby() {
+            let list = document.getElementById("list");
+
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+                userProfile.hobbies.pop();
+            }
+        }
+    </script>
+
+</body>
+</html>

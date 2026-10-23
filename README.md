@@ -18,7 +18,17 @@ Created a hobbies list. The Add Item button adds a new item. The Remove Item but
 
 ## Screenshots
 
-Add screenshots of the working website here.
+### 1. Initial Website
+![Initial Website](screenshots/initial.png)
+
+### 2. Profile Created
+![Profile Created](screenshots/profile-created.png)
+
+### 3. Hobbies Added
+![Hobbies Added](screenshots/hobbies-added.png)
+
+### 4. Hobby Removed
+![Hobby Removed](screenshots/hobby-removed.png)
 
 ## Summary
 

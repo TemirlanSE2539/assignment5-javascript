@@ -19,16 +19,16 @@ Created a hobbies list. The Add Item button adds a new item. The Remove Item but
 ## Screenshots
 
 ### 1. Initial Website
-![Initial Website](screenshots/initial.png)
+![Initial Website](initial.jpg)
 
 ### 2. Profile Created
-![Profile Created](screenshots/profile-created.png)
+![Profile Created](profile-created.jpg)
 
 ### 3. Hobbies Added
-![Hobbies Added](screenshots/hobbies-added.png)
+![Hobbies Added](hobbies-added.jpg)
 
 ### 4. Hobby Removed
-![Hobby Removed](screenshots/hobby-removed.png)
+![Hobby Removed](hobby-removed.jpg)
 
 ## Summary
 
